@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <!-- fontwowsome link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+    <!-- bootstrape link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Home Page</title>
+
+  </head>
+  <body>
+<!-- header -->
+  <header>
+    <div class="nav-container">
+      <nav class="navbar">
+        <div class="brand">
+          <a href="#">finderr.</a>
+        </div>
+        <input type="checkbox" id="check">
+        <label for="check" class="menu-btn">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+            
+          <div class="nav-list">
+              
+            <ul class="navlinks">
+              <li><a href="index.html">jobs</a></li>
+              <li><a href="company.html">companies</a></li>
+              <li><a href="services.html">services</a></li>
+            </ul>
+
+            <div class="btnn-group">
+              <a href="index.html" class="employers">for employers</a>
+              <a href="registration.html"  class="register">register</a>
+              <a href="login.html"  class="login">login</a>
+            </div>
+    
+          </div>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <!-- banner -->
+    <section class="banner">
+      <div class="container">
+        <!-- <div class="content"> -->
+      <div class="finderr-container">
+          <p class="content">Work for something you love with Finderr.</p>
+      </div> 
+
+        
+        <!-- for search bar -->
+        <div class="search">
+          <span class="searchjobs"> 
+            <i class="bi bi-search"></i>
+          </span>
+          <input type="text" placeholder="Search Jobs">
+          <div class="divider"></div>
+  
+          <select>
+            <option selected >Qualifications</option>
+            <option>B.Tech</option>
+            <option>B.C.A</option>
+            <option>B.B.A</option>
+          </select>
+  
+           <div class="divider"></div>
+  
+           <select>
+            <option selected >Job Location</option>
+            <option>Kolkata</option>
+            <option>Pune</option>
+            <option>Bangalore</option>
+           </select>
+
+            <a href="#" class="btn1 search-btn">search</a>
+           
+          
+        </div> 
+
+        <div class="banner-img">
+          <img src="images/Group 1.png" class="img1" alt="group1" />
+          <img src="images/download 1.png" class="img2" alt="download" />
+        </div>
+
+      </div>
+      </div>
+    </section>
+    <!-- logo -->
+    <section class="logo">
+      <div class="container">
+        <div class="logo-company-name">
+          <a href="#"><img src="images/tcs.png" alt="" /></a>
+          <a href="#"><img src="images/hire.png" alt="" /></a>
+          <a href="#"><img src="images/wipro.png" alt="" /></a>
+          <a href="#"><img src="images/amazon.png" alt="" /></a>
+          <a href="#"><img src="images/flipkart.png" alt="" /></a>
+          <a href="#"><img src="images/Tata-Logo-1988 1.png" alt="" /></a>
+          <a href="#"><img src="images/Infosys_logo.svg 1.png" alt="" /></a>
+        </div>
+      </div>
+    </section>
+    <!-- logo script -->
+    <script>
+      // Clone the logos for smooth infinite scroll
+      const companyName = document.querySelector(".logo-company-name");
+      const logos = companyName.innerHTML;
+      companyName.innerHTML += logos;
+      let scrollAmount = 0;
+      function autoScrollLogos() {
+        scrollAmount += 1;
+        companyName.style.transform = `translateX(-${scrollAmount}px)`;
+        companyName.style.transition = "transform 0s linear";
+
+        // Reset when halfway through the duplicated logos
+        if (scrollAmount >= companyName.scrollWidth / 2) {
+          scrollAmount = 0;
+        }
+        requestAnimationFrame(autoScrollLogos);
+      }
+      autoScrollLogos();
+    </script>
+
+<!-- card -->
+    <section class="shop">
+      <div class="container">
+        <din class="heading">
+          <p>Top Companies that are hiring</p>
+        </din>
+        <div class="row shop-row">
+              <div class="col25">
+                <div class="card">
+                  <img src="images/wipro-card1.png" alt="logo" />
+
+                  <div class="card-content">
+                    <div class="content-rating">
+                      <span><i class="fa-solid fa-star " ></i>3.8, 50k+reviews</span>
+                    </div>
+                    <span class="card-heading">UI/UX designer</span>
+
+
+                    <div class="card-deatils">
+                      <span class="Mumbai"><i class="fa-solid fa-location-dot"></i>Mumbai</span>
+                      <span class="Mumbai"><i class="fa-solid fa-briefcase six-years"></i>6yrs</span>
+                    </div>
+
+                    <span class="logo1"><i class="fa-regular fa-circle-user"></i>7persons</span>
+
+
+                    <div class="card-apply">
+                      <span class="int">Not Interested</span>
+                      <a href="#" class="apply">Apply</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col25">
+                <div class="card">
+                  <img src="images/infocys1.png" alt="logo" />
+
+                  <div class="card-content-frist">
+                    <div class="content-rating">
+                      <span><i class="fa-solid fa-star" class="review"></i>3.8, 50k+reviews</span>
+                    </div>
+                    <span class="card-heading">UI/UX designer</span>
+
+
+                    <div class="card-deatils">
+                      <span class="Mumbai"><i class="fa-solid fa-location-dot"></i>Mumbai</span>
+                      <span class="Mumbai"><i class="fa-solid fa-briefcase dot"></i>6yrs</span>
+                    </div>
+
+                    <span class="logo1"><i class="fa-regular fa-circle-user"></i>7persons</span>
+
+
+                    <div class="card-apply">
+                      <span class="int">Not Interested</span>
+                      <a href="#" class="apply">Apply</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col25">
+                <div class="card">
+                  <img src="images/hire1.png" alt="logo"/>
+
+                  <div class="card-content-frist">
+                    <div class="content-rating">
+                      <span><i class="fa-solid fa-star" class="review"></i>3.8, 50k+reviews</span>
+                    </div>
+                    <span class="card-heading">UI/UX designer</span>
+
+
+                    <div class="card-deatils">
+                      <span class="Mumbai"><i class="fa-solid fa-location-dot"></i>Mumbai</span>
+                      <span class="Mumbai"><i class="fa-solid fa-briefcase dot"></i>6yrs</span>
+                    </div>
+
+                    <span class="logo1"><i class="fa-regular fa-circle-user"></i>7persons</span>
+
+
+                    <div class="card-apply">
+                      <span class="int">Not Interested</span>
+                      <a href="#" class="apply">Apply</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="col25">
+                <div class="card">
+                  <img src="images/amazon1.png" alt="logo" />
+
+                  <div class="card-content-frist">
+                    <div class="content-rating">
+                      <span><i class="fa-solid fa-star" class="review"></i>3.8, 50k+reviews</span>
+                    </div>
+                    <span class="card-heading">UI/UX designer</span>
+
+
+                    <div class="card-deatils">
+                      <span class="Mumbai-frist"><i class="fa-solid fa-location-dot"></i>Mumbai</span>
+                      <span class="Mumbai-frist"><i class="fa-solid fa-briefcase dot"></i>6yrs</span>
+                    </div>
+
+                    <span class="logo1"><i class="fa-regular fa-circle-user"></i>7persons</span>
+
+
+                    <div class="card-apply">
+                      <span class="int">Not Interested</span>
+                      <a href="#" class="apply">Apply</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="btn-grp">
+            <a href="" class="view-btn">view all</a>
+          </div>
+      </div>
+    </section>
+
+    <!-- top-job -->
+
+    
+  <section class="top-job">
+    <div class="container">
+      <div class="content-heading">
+        <p>Top Jobs all over India</p>
+      </div>
+      <!-- Swiper -->
+      <div class="row">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="col25 swiper-slide">
+              <div class="card1">
+                <span class="job-type">Web developer</span>
+                <div class="card1-content">
+                  <div class="card-deatils1">
+                    <span class="bombai"
+                      ><i class="fa-solid fa-location-dot"></i>Mumbai</span
+                    >
+
+                    <span class="bombai"
+                      ><i class="fa-solid fa-briefcase"></i>6yrs</span
+                    >
+                  </div>
+
+                  <span class="logo2"><i class="fa-regular fa-circle-user"></i>7persons</span>
+
+                  <div class="card-apply1">
+                    <span class="int-first">Not Interested</span>
+                    <a href="#" class="apply1">view</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col25 swiper-slide">
+              <div class="card1">
+                <span class="job-type">UI/UX designer</span>
+                <div class="card1-content">
+                  <div class="card-deatils1">
+                    <span class="bombai"
+                      ><i class="fa-solid fa-location-dot"></i>Mumbai</span
+                    >
+
+                    <span class="bombai"
+                      ><i class="fa-solid fa-briefcase"></i>6yrs</span
+                    >
+                  </div>
+
+                  <span class="logo2"><i class="fa-regular fa-circle-user"></i>7persons</span>
+
+                  <div class="card-apply1">
+                    <span class="int-first">Not Interested</span>
+                    <a href="#" class="apply1">view</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col25 swiper-slide">
+              <div class="card1">
+                <span class="job-type">Call centre</span>
+                <div class="card1-content">
+                  <div class="card-deatils1">
+                    <span class="bombai"
+                      ><i class="fa-solid fa-location-dot"></i>Mumbai</span
+                    >
+
+                    <span class="bombai"
+                      ><i class="fa-solid fa-briefcase"></i>6yrs</span
+                    >
+                  </div>
+
+                  <span class="logo2"><i class="fa-regular fa-circle-user"></i>7persons</span>
+
+                  <div class="card-apply1">
+                    <span class="int-first">Not Interested</span>
+                    <a href="#" class="apply1">view</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col25 swiper-slide">
+              <div class="card1">
+                <span class="job-type">Teacher</span>
+                <div class="card1-content">
+                  <div class="card-deatils1">
+                    <span class="bombai"
+                      ><i class="fa-solid fa-location-dot"></i>Mumbai</span
+                    >
+
+                    <span class="bombai"
+                      ><i class="fa-solid fa-briefcase"></i>6yrs</span
+                    >
+                  </div>
+
+                  <span class="logo2"><i class="fa-regular fa-circle-user"></i>7persons</span>
+
+                  <div class="card-apply1">
+                    <span class="int-first">Not Interested</span>
+                    <a href="#" class="apply1">view</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="col25 swiper-slide">
+              <div class="card1">
+                <span class="job-type">Web developer</span>
+                <div class="card1-content">
+                  <div class="card-deatils1">
+                    <span class="bombai"
+                      ><i class="fa-solid fa-location-dot"></i>Mumbai</span
+                    >
+
+                    <span class="bombai"
+                      ><i class="fa-solid fa-briefcase"></i>6yrs</span
+                    >
+                  </div>
+
+                  <span class="logo2"><i class="fa-regular fa-circle-user"></i>7persons</span>
+
+                  <div class="card-apply1">
+                    <span class="int-first">Not Interested</span>
+                    <a href="#" class="apply1">view</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="col25 swiper-slide">
+              <div class="card1">
+                <span>Teacher</span>
+                <div class="card1-content">
+                  <div class="card-deatils1">
+                    <span class="bombai"
+                      ><i class="fa-solid fa-location-dot"></i>Mumbai</span
+                    >
+
+                    <span class="bombai"
+                      ><i class="fa-solid fa-briefcase"></i>6yrs</span
+                    >
+                  </div>
+
+                  <span class="logo2"><i class="fa-regular fa-circle-user"></i>7persons</span>
+
+                  <div class="card-apply1">
+                    <span class="int-first">Not Interested</span>
+                    <a href="#" class="apply1">view</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="col25 swiper-slide">
+              <div class="card1">
+                <span>Call centre</span>
+                <div class="card1-content">
+                  <div class="card-deatils1">
+                    <span class="bombai"
+                      ><i class="fa-solid fa-location-dot"></i>Mumbai</span
+                    >
+
+                    <span class="bombai"
+                      ><i class="fa-solid fa-briefcase"></i>6yrs</span
+                    >
+                  </div>
+
+                  <span class="logo2"><i class="fa-regular fa-circle-user"></i>7persons</span>
+
+                  <div class="card-apply1">
+                    <span class="int-first">Not Interested</span>
+                    <a href="#" class="apply1">view</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+            <div class="col25 swiper-slide">
+              <div class="card1">
+                <span>Web developer</span>
+                <div class="card1-content">
+                  <div class="card-deatils1">
+                    <span class="bombai"
+                      ><i class="fa-solid fa-location-dot"></i>Mumbai</span
+                    >
+
+                    <span class="bombai"
+                      ><i class="fa-solid fa-briefcase"></i>6yrs</span
+                    >
+                  </div>
+
+                  <span class="logo2"><i class="fa-regular fa-circle-user"></i>7persons</span>
+
+                  <div class="card-apply1">
+                    <span class="int-frist">Not Interested</span>
+                    <a href="#" class="apply1">view</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          
+          </div>
+
+
+
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <!-- js -->
+  
+
+    
+  <!-- finderr -->
+    <section class="find">
+      <div class="finderr">Finderr.</div>
+    </section>
+
+    <!-- premimum sevices -->
+    <section class="premimun-services">
+      <div class="container">
+          <div class="details">
+              <p>Premium Services</p>
+              <span>view all</span>
+            </div>
+          <div class="row">
+              <div class="col33">
+                  <div class="services-card">
+                      <div class="card-content-pre">
+                        <p>Application highlighter</p>
+                        <span>Lorem ipsum dolor sit amet consectetur. Consectetur malesuada tincidunt arcu in sagittis in et. Enim.</span>
+                        <div class="doller"><i class="fa-solid fa-dollar-sign"></i>12.85</div>
+      
+                        <a href="#" class="cmn-btn">subscriber</a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col33">
+                  <div class="services-card">
+                      <div class="card-content-pre">
+                        <p>Featured Profile</p>
+                        <span>Lorem ipsum dolor sit amet consectetur. Consectetur malesuada tincidunt arcu in sagittis in et. Enim.</span>
+                        <div class="doller" ><i class="fa-solid fa-dollar-sign"></i>12.85</div>
+      
+                        <a href="#" class="cmn-btn">subscriber</a>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col33">
+                  <div class="services-card">
+                      <div class="card-content-pre">
+                        <p>Profile Booster</p>
+                        <span>Lorem ipsum dolor sit amet consectetur. Consectetur malesuada tincidunt arcu in sagittis in et. Enim.</span>
+                        <div class="doller"><i class="fa-solid fa-dollar-sign"></i>12.85</div>
+      
+                        <a href="#" class="cmn-btn">subscriber</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- to discover -->
+  <section class="discover">
+    <div class="dis-container">
+      <div class="dis-details">
+        Discover Jobs among popular roles.
+      </div>
+
+       <div class="background-div">
+        <div class="row background-row">
+
+          <div class="col50">
+            <div class="left-part">
+              <figure class="fig-img">
+                <img src="images/man.png" alt="man" class="man-img">
+              </figure>
+            </div>
+          </div>
+          <div class="col50">
+            <div class="right-part">
+             <div class="glass-container">
+       
+          <div class="frist-div">
+            <div class="fullstack">
+              <p>Full stack developer</p>
+              <span>19.5k+jobs<i class="fas fa-angle-right"></i></span>
+            </div>
+            <div class="fullstack">
+              <p>Frontend developer</p>
+              <span>19.5k+jobs<i class="fas fa-angle-right"></i></span>
+            </div>
+            <div class="fullstack">
+              <p>Backend developer</p>
+              <span>19.5k+jobs <i class="fas fa-angle-right"></i></span>
+            </div>
+          </div>
+        
+
+              <div class="sceond-div">
+               <div class="fullstack">
+              <p>Java developer</p>
+              <span>19.5k+jobs<i class="fas fa-angle-right"></i></span>
+            </div>
+            <div class="fullstack">
+              <p>data analyst</p>
+              <span>19.5k+jobs<i class="fas fa-angle-right"></i></span>
+            </div>
+            <div class="fullstack">
+              <p>DevOps Engineer</p>
+              <span>19.5k+jobs<i class="fas fa-angle-right"></i></span>
+            </div>
+          </div>
+
+        </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+      <!-- how it works -->
+
+      <section class="work">
+        <div class="container">
+          <div class="heading">
+            How It Works?
+          </div>
+
+          <div class="image">
+            <img src="images/vector_one.png" alt="">
+          </div>
+
+          <div class="work-content_one">
+            <div class="row">
+              <div class="col33">
+                <div class="description">
+                  <p>create account</p>
+                  <span>It's very easy to open an account and start your journey.</span>
+                </div>
+              </div>
+
+              <div class="col33">
+                <div class="description">
+                  <p>Complete your profile</p>
+                  <span>Complete your profile with all the info to get attention of client.</span>
+                </div>
+              </div>
+
+              <div class="col33">
+                <div class="description">
+                  <p>apply job or hire</p>
+                  <span>Apply & get your preferable jobs with all the requirements and get it.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+            
+          </div>
+        </div>
+      </section> 
+
+
+      <!-- Top Recruiters -->
+
+      <section class="top-recruters">
+        <div class="container">
+            <div class="top-heading">
+              <p>Top Recruiters</p>
+              <span>Discover your next career move, freelance gig, or internship</span>
+            </div>
+            <div class="row">
+                <div class="col33">
+                    <div class="recruters-card">
+                        <img src="images/loone.png" alt="">
+
+                        <div class="review">
+                            
+                            <p>Loone Agency</p>
+                            <div class="star">
+                            
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="location">
+                            <span class="Madrid"><i class="fa-solid fa-location-dot"></i>Madrid,Spain</span>
+                            <span>5 Open Jobs</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col33">
+                    <div class="recruters-card">
+                        <img src="images/akasa.png" alt="">
+
+                        <div class="review">
+                            
+                            <p>Akasa Creative</p>
+                            <div class="star">
+                            
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="location">
+                            <span class="Madrid"><i class="fa-solid fa-location-dot"></i>Madrid,Spain</span>
+                            <span>5 Open Jobs</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col33">
+                    <div class="recruters-card">
+                        <img src="images/lounge.png" alt="">
+
+                        <div class="review">
+                            
+                            <p>Lounge Tech</p>
+                            <div class="star">
+                            
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="location">
+                            <span class="Madrid"><i class="fa-solid fa-location-dot"></i>Madrid,Spain</span>
+                            <span>5 Open Jobs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col33">
+                    <div class="recruters-card">
+                        <img src="images/google.png" alt="">
+
+                        <div class="review">
+                            
+                            <p>Google</p>
+                            <div class="star">
+                            
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="location">
+                            <span class="Madrid"><i class="fa-solid fa-location-dot"></i>Madrid,Spain</span>
+                            <span>5 Open Jobs</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col33">
+                    <div class="recruters-card">
+                        <img src="images/behance.png" alt="">
+
+                        <div class="review">
+                            
+                            <p>Behance</p>
+                            <div class="star">
+                            
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="location">
+                            <span class="Madrid"><i class="fa-solid fa-location-dot"></i>Madrid,Spain</span>
+                            <span>5 Open Jobs</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col33">
+                    <div class="recruters-card">
+                        <img src="images/behance.png" alt="">
+
+                        <div class="review">
+                            
+                            <p>Renora, Ltd</p>
+                            <div class="star">
+                            
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+
+                        <div class="location">
+                            <span class="Madrid"><i class="fa-solid fa-location-dot"></i>Madrid,Spain</span>
+                            <span>5 Open Jobs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col33">
+                  <div class="recruters-card">
+                      <img src="images/target.png" alt="">
+
+                      <div class="review">
+                          
+                          <p>Targetin.co</p>
+                          <div class="star">
+                          
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                              <i class="fa-solid fa-star"></i>
+                          </div>
+                      </div>
+
+                      <div class="location">
+                          <span class="Madrid"><i class="fa-solid fa-location-dot"></i>Madrid,Spain</span>
+                          <span>5 Open Jobs</span>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="col33">
+                <div class="recruters-card">
+                    <img src="images/akasa.png" alt="">
+
+                    <div class="review">
+                        
+                        <p>Akasa Creative</p>
+                        <div class="star">
+                        
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+
+                    <div class="location">
+                        <span class="Madrid"><i class="fa-solid fa-location-dot"></i>Madrid,Spain</span>
+                        <span>5 Open Jobs</span>
+                    </div>
+                </div>
+              </div>
+
+              <div class="col33">
+                <div class="recruters-card">
+                    <img src="images/lounge.png" alt="">
+
+                    <div class="review">
+                        
+                        <p>Lounge Tech</p>
+                        <div class="star">
+                        
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+
+                    <div class="location">
+                      <span class="Madrid"><i class="fa-solid fa-location-dot"></i>Madrid,Spain</span>
+                      <span>5 Open Jobs</span>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+
+      <!-- testimonals -->
+      <section class="testimonals">
+        <div class="top-testimonals">
+          Testimonials
+        </div>
+        <!-- 1st card -->
+        <div class="testimonals-card"> 
+                
+          <!-- 2nd card -->
+          <div class="content-card">
+            <span class="content-details">Lorem ipsum dolor sit amet consectetur. Ac mauris id libero eget sit ut. Interdum cursus ipsum viverra pulvinar ultricies viverra morbi diam. Et aliquet lorem blandit morbi nisl. Congue metus amet est ante magna senectus lobortis odio nunc. Suscipit et ultrices sed arcu facilisi commodo. Viverra aliquam pretium dui id lacus augue sed tincidunt faucibus.</span>
+
+            <div class="content-image">
+              <figure>
+                <img src="images/PROFILE IMG.png" alt="">
+              </figure>
+            </div>
+          </div>
+          <!-- for slider -->
+          
+          <div class="slider">
+            <!-- 1st part -->
+            <div class="star">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+            <!-- 2nd part -->
+             <div class="name">
+              <p>Savannah Nguyen</p>
+              <span>Customer</span>
+             </div>
+
+             <!-- arrow  -->
+              <div class="arrow">
+                <a href="#"><i class="fa-solid fa-caret-left"></i></a>
+                <a href="#"><i class="fa-solid fa-caret-right"></i></a>
+              </div>
+
+              <!-- line -->
+               <div class="line">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line2"></div>
+               </div>
+          </div>
+        </div>
+      </section>
+      </main>
+
+      <!-- footer section -->
+   
+      <footer class="footer">
+        <div class="footer-container">
+          <div class="newsletter">
+  
+            <div class="newsletter-text">
+                  Join our newsletter to keep up to date with us!
+            </div> 
+            
+            <div class="newsletter-div">
+              <div class="input-field">
+                <i class="bi bi-person"></i>
+              <input type="email" id="email"  placeholder=" Enter your email"  />
+            </div>
+              <a href="#" class="btn">Subscribe</a>
+          </div>
+        </div> 
+  
+          <div class="footer-main">
+            <div class="footer-brand">
+              <div class="company-name">Finderr.</div>
+              <div class="company-details">
+                  We growing up your business with <br />
+                  personal AI manager.
+              </div>
+              <div class="icons">
+                <a href="https://www.instagram.com/webskittersacademy?igsh=MTRjdWFla3k5eGRkaA==" target="_blank"><i class="fa-brands fa-instagram insta"></i></a>
+                <a href="https://www.facebook.com/share/1BS6x2Trcx/?mibextid=qi2Omg" target="_blank"><i class="fa-brands fa-facebook-f   facebook"></i></a>
+                <a href="https://x.com/WebSkitters_Edu?t=bs8KnU0BxNRR1Kp4qZg6LQ&s=09" target="_blank"><i class="fa-brands fa-twitter twitter"></i></a>
+              </div>
+            </div>
+  
+            <div class="footer-data">
+              <div class="div">
+                  <div class="data-heading">Platform</div>
+                <ul class="data-details">
+                  <li><a href="#">Plans & Pricing</a></li>
+                  <li><a href="#">Personal AI Manager</a></li>
+                  <li><a href="#">AI Business Writer</a></li>
+                </ul>
+              </div>
+              <div class="div">
+                  <div class="data-heading">Company</div>
+                <ul class="data-details">
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Careers</a></li>
+                  <li><a href="#">News</a></li>
+                </ul>
+              </div>
+              <div class="div">
+                <div class="data-heading Resources">Resources</div>
+                <ul class="data-details data-resources">
+                  <li><a href="#">Documentation</a></li>
+                  <li><a href="#">Papers</a></li>
+                  <li><a href="#">Press Conferences</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+  
+          <div class="footer-bottom">
+            <div class="copyright">&copy; 2023 Finderr. Inc.</div>
+            <div class="legal">
+              <a href="#">Terms of Service</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Cookies</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- js -->
+       <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 6,
+        spaceBetween: 5,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+
+
+
+    <script>
+      
+  const testimonials = [
+    {
+      text: "Lorem ipsum dolor sit amet consectetur. Ac mauris id libero eget sit ut. Interdum cursus ipsum viverra pulvinar ultricies viverra morbi diam. Et aliquet lorem blandit morbi nisl. Congue metus amet est ante magna senectus lobortis odio nunc. Suscipit et ultrices sed arcu facilisi commodo. Viverra aliquam pretium dui id lacus augue sed tincidunt faucibus",
+      name: "Savannah Nguyen",
+      role: "Customer",
+      image: "images/PROFILE IMG.png"
+    },
+    {
+      text: "Lorem ipsum dolor sit amet consectetur. Ac mauris id libero eget sit ut. Interdum cursus ipsum viverra pulvinar ultricies viverra morbi diam. Et aliquet lorem blandit morbi nisl. Congue metus amet est ante magna senectus lobortis odio nunc. Suscipit et ultrices sed arcu facilisi commodo. Viverra aliquam pretium dui id lacus augue sed tincidunt faucibus",
+      name: "Ravi Kumar",
+      role: "Client",
+      image: "images/PROFILE IMG.png"
+    },
+    {
+      text: "Lorem ipsum dolor sit amet consectetur. Ac mauris id libero eget sit ut. Interdum cursus ipsum viverra pulvinar ultricies viverra morbi diam. Et aliquet lorem blandit morbi nisl. Congue metus amet est ante magna senectus lobortis odio nunc. Suscipit et ultrices sed arcu facilisi commodo. Viverra aliquam pretium dui id lacus augue sed tincidunt faucibus",
+      name: "Aisha Ali",
+      role: "User",
+      image: "images/PROFILE IMG.png"
+    }
+  ];
+
+  let currentIndex = 0;
+
+  const contentDetails = document.querySelector('.content-details');
+  const nameEl = document.querySelector('.name p');
+  const roleEl = document.querySelector('.name span');
+  const imageEl = document.querySelector('.content-image img');
+  const line1 = document.querySelector('.line1');
+  const line2 = document.querySelectorAll('.line2');
+
+  function updateTestimonial(index) {
+    const testimonial = testimonials[index];
+    contentDetails.textContent = testimonial.text;
+    nameEl.textContent = testimonial.name;
+    roleEl.textContent = testimonial.role;
+    imageEl.src = testimonial.image;
+
+    // Update line indicators
+    line1.style.backgroundColor = "transparent";
+    line2.forEach(line => line.style.backgroundColor = "transparent");
+
+    if (index === 0) {
+      line1.style.backgroundColor = "orange";
+    } else {
+      line2.forEach((line, i) => {
+        if (i === index - 1) {
+          line.style.backgroundColor = "orange";
+        }
+      });
+    }
+  }
+
+  // Event listeners for arrows
+  document.querySelector('.fa-caret-right').addEventListener('click', (e) => {
+    e.preventDefault();
+    currentIndex = (currentIndex + 1) % testimonials.length;
+    updateTestimonial(currentIndex);
+  });
+
+  document.querySelector('.fa-caret-left').addEventListener('click', (e) => {
+    e.preventDefault();
+    currentIndex = (currentIndex - 1 + testimonials.length) % testimonials.length;
+    updateTestimonial(currentIndex);
+  });
+
+  // Initialize with first testimonial
+  updateTestimonial(currentIndex);
+
+    </script>
+    
+  </body>
+</html>

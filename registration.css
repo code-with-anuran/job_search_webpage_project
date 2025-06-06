@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+    --primary-color:#313267;
+    --primary-color1:#5C5C5D;
+    --primary-color2:#E19544;
+    --content-color:#313267;
+    --search-bar:#E19544;
+    --content1--color1:#626262;
+    --services--color:##313267;
+    --detailsp--color:#5C5C5D;
+    --dis--color:#5C5C5D;
+    --work--color:#5C5C5D;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    overflow-x: hidden; 
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    line-height: 1.62;
+    font-size: 16px;
+    color: var(--primary-color);
+}
+ul li{
+    list-style: none;
+}
+
+a{
+    display: block;
+}
+.login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 141px;
+}
+.container{
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.social-btn i{
+  font-size: 25px;
+}
+
+.register-btn{
+  text-decoration: none;
+  color: #fff;
+}
+
+.signup-link span{
+  display: inline-block;
+}
+.col50{
+  max-width: 50%;
+  flex: 0 0 50%;
+  padding: 0 15px;
+}
+
+
+.regis-img img{
+  margin-left: -64px;
+}
+.login-container {
+  margin-left: -89px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+}
+  .login-container h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: var(--content1--color1);
+  }
+  .login-container p {
+    font-size: 14px;
+    color: #b0b0b0;
+    margin-bottom: 25px;
+    color: var(--content1--color1);
+  }
+  .form-group {
+    margin-bottom: 10px;
+  }
+  .form-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: -2px;
+    color: var(--content1--color1);
+  }
+  #save-password label{
+    margin-bottom: -5px;
+  }
+  .form-group input {
+    width: 100%;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid black;
+    color: #000;
+    font-size: 14px;
+  }
+  .form-group input::placeholder {
+    color: #a0a0a0;
+  }
+  .forgot-password {
+    float: right;
+    font-size: 12px;
+    color: #3a82f7;
+    text-decoration: none;
+    margin-top: -16px;
+    margin-bottom: 16px;
+    /* display: inline-block; */
+  }
+  .save-password {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 36px 0 20px 0;
+    color: var(--content1--color1);
+  }
+  .reg-btn{
+    background-color: #ec9f4f;
+    border: none;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    width: 100%;
+    font-size: 16px;
+    color: white;
+  }
+  .reg-btn:hover{
+    box-shadow: 0 0 0 4px #fff,
+    0 0 0 8px var(--search-bar);
+  }
+  /* .register-btn {
+    display: block;
+  } */
+  .or-text {
+    text-align: center;
+    margin: 20px 0;
+    color: #888;
+  }
+ 
+  .signup-link {
+    display: flex;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 80px;
+    font-size: 14px;
+    width: 424px;
+    color: var(--work--color);
+  }
+  .signup-link a {
+    color: var(--primary-color);
+    text-decoration: none;
+    margin-left: 5px;
+    display: block;
+}
+@media (max-width:1199px) {
+  .signup-link{
+    margin-left: 40px;
+  }
+}
+@media (max-width:991px) {
+  .login .col50{
+    max-width: 100%;
+    flex: 0 0 100%;
+    padding: 0 15px;
+  }
+
+  .login .login-container{
+    margin-left: 94px;
+  }
+  .regis-img{
+    margin-left: 48px;
+  }
+  .signup-link{
+    margin-left: 90px;
+  }
+}
+@media (max-width:480px) {
+  .login .login-container{
+    position: relative;
+    left: -30px;
+   
+  }
+  .login .registration-content{
+    text-align: center;
+  }
+  .login .regis-img img{
+    margin-left: -6px;
+    width: 488px;
+  }
+}
+@media (max-width:420px) {
+  
+  .form-group label {
+    padding-left:52px;
+  }
+  
+  .save-password{
+    padding-left: 47px;
+  }
+  .form-group input {
+    width: 80%;
+    margin-left: 48px;
+
+  }
+  .reg-btn{
+    width: 80%;
+    margin-left: 46px;
+  }
+  .signup-link{
+    margin-left: 90px;
+  }
+}
+
+@media(max-width:375px){
+
+  .form-group input{
+    width: 60%;
+    margin-left: 78px;
+    font-size: 12px;
+  }
+
+  .form-group label{
+    padding-left: 84px;
+  }
+
+  .login-container h2{
+    font-size: 25px;
+  }
+
+  .login-container p{
+    font-size: 12px;
+  }
+
+  .save-password{
+    font-size: 13px;
+    padding-left: 80px;
+  }
+
+  .reg-btn{
+    width: 65%;
+    padding: 0;
+    margin-left: 68px;
+    font-size: 14px;
+  }
+}
